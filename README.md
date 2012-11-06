@@ -29,7 +29,7 @@ var query = mongoc({
 	hello:{$in:['world','mondo']}
 });
 
-console.log(['world','verden','mondo','welt'].filter(query));
+console.log([{hello:'world'},{hello:'verden'},{hello:'mondo'},{hello:'welt'}].filter(query));
 ```
 
 For a complete reference of the query language see [the mongo docs](http://www.mongodb.org/display/DOCS/Advanced+Queries)
