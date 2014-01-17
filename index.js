@@ -16,16 +16,16 @@ FNS.$ne = function(key, val) {
 	return 'doc['+key+'] !== '+val;
 };
 FNS.$gt = function(key, val) {
-	return 'doc['+key+'] < '+val;
-};
-FNS.$gte = function(key, val) {
-	return 'doc['+key+'] <= '+val;
-};
-FNS.$lt = function(key, val) {
 	return 'doc['+key+'] > '+val;
 };
-FNS.$lte = function(key, val) {
+FNS.$gte = function(key, val) {
 	return 'doc['+key+'] >= '+val;
+};
+FNS.$lt = function(key, val) {
+	return 'doc['+key+'] < '+val;
+};
+FNS.$lte = function(key, val) {
+	return 'doc['+key+'] <= '+val;
 };
 FNS.$in = function(key, vals) {
 	return vals+'.indexOf(doc['+key+']) !== -1';
