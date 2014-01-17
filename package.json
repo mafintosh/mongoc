@@ -1,6 +1,6 @@
 {
  "name":"mongoc",
- "version":"0.1.0",
+ "version":"0.1.1",
  "repository": "git://github.com/mafintosh/mongoc",
  "description":"compile mongo queries into javascript functions",
  "keywords": ["query", "mongo", "mongodb"],
